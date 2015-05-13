@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F8DA4E591B03041D00F05E95 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8DA4E581B03041D00F05E95 /* main.cpp */; };
+		F8DA4E611B03047400F05E95 /* libGLUS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DA4E5F1B03047400F05E95 /* libGLUS.a */; };
+		F8DA4E621B03047400F05E95 /* libglfw.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DA4E601B03047400F05E95 /* libglfw.3.1.dylib */; };
+		F8DA4E641B03058F00F05E95 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DA4E631B03058F00F05E95 /* OpenGL.framework */; };
+		F8DA4E661B03059600F05E95 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DA4E651B03059600F05E95 /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		F8DA4E551B03041D00F05E95 /* GLUS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GLUS; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DA4E581B03041D00F05E95 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F8DA4E5F1B03047400F05E95 /* libGLUS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLUS.a; path = ../../../../usr/local/lib/libGLUS.a; sourceTree = "<group>"; };
+		F8DA4E601B03047400F05E95 /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../usr/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
+		F8DA4E631B03058F00F05E95 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		F8DA4E651B03059600F05E95 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8DA4E661B03059600F05E95 /* GLUT.framework in Frameworks */,
+				F8DA4E641B03058F00F05E95 /* OpenGL.framework in Frameworks */,
+				F8DA4E611B03047400F05E95 /* libGLUS.a in Frameworks */,
+				F8DA4E621B03047400F05E95 /* libglfw.3.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +53,10 @@
 		F8DA4E4C1B03041D00F05E95 = {
 			isa = PBXGroup;
 			children = (
+				F8DA4E651B03059600F05E95 /* GLUT.framework */,
+				F8DA4E631B03058F00F05E95 /* OpenGL.framework */,
+				F8DA4E5F1B03047400F05E95 /* libGLUS.a */,
+				F8DA4E601B03047400F05E95 /* libglfw.3.1.dylib */,
 				F8DA4E571B03041D00F05E95 /* GLUS */,
 				F8DA4E561B03041D00F05E95 /* Products */,
 			);
@@ -205,6 +221,15 @@
 		F8DA4E5D1B03041D00F05E95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+					/Users/xuyouren/XcodeProjects/McNopper/OpenGL/GLUS/src,
+					/usr/local/glm,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "-lGLEW";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +237,15 @@
 		F8DA4E5E1B03041D00F05E95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/local/include,
+					/Users/xuyouren/XcodeProjects/McNopper/OpenGL/GLUS/src,
+					/usr/local/glm,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				OTHER_LDFLAGS = "-lGLEW";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -235,6 +269,7 @@
 				F8DA4E5E1B03041D00F05E95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

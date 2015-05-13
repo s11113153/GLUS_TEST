@@ -6,10 +6,15 @@
 //  Copyright (c) 2015年 許佑任. All rights reserved.
 //
 
+#include "GL/glus.h"
+
+#include <stdio.h>
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-  // insert code here...
-  std::cout << "Hello, World!\n";
-    return 0;
+using std::cout;
+using std::endl;
+
+int main (int argc, char ** argv) {
+
+  return EXIT_SUCCESS;
 }
