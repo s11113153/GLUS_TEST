@@ -27,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F859AF671B0451880038C616 /* red.frag.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = red.frag.glsl; sourceTree = "<group>"; };
+		F859AF681B0451880038C616 /* simple.vert.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = simple.vert.glsl; sourceTree = "<group>"; };
 		F8DA4E551B03041D00F05E95 /* GLUS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GLUS; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DA4E581B03041D00F05E95 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F8DA4E5F1B03047400F05E95 /* libGLUS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLUS.a; path = ../../../../usr/local/lib/libGLUS.a; sourceTree = "<group>"; };
@@ -50,6 +52,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F859AF661B0451170038C616 /* shader */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = shader;
+			sourceTree = "<group>";
+		};
 		F8DA4E4C1B03041D00F05E95 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +82,9 @@
 		F8DA4E571B03041D00F05E95 /* GLUS */ = {
 			isa = PBXGroup;
 			children = (
+				F859AF671B0451880038C616 /* red.frag.glsl */,
+				F859AF681B0451880038C616 /* simple.vert.glsl */,
+				F859AF661B0451170038C616 /* shader */,
 				F8DA4E581B03041D00F05E95 /* main.cpp */,
 			);
 			path = GLUS;
