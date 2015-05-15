@@ -33,8 +33,8 @@
 		F8DA4E601B03047400F05E95 /* libglfw.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.1.dylib; path = ../../../../usr/local/lib/libglfw.3.1.dylib; sourceTree = "<group>"; };
 		F8DA4E631B03058F00F05E95 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		F8DA4E651B03059600F05E95 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		F8E3254B1B04F583008039F6 /* basic.vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = basic.vert.glsl; sourceTree = "<group>"; };
-		F8E3254C1B04F5A3008039F6 /* color.frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = color.frag.glsl; sourceTree = "<group>"; };
+		F8E3254E1B058C9E008039F6 /* phong.vert.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phong.vert.glsl; sourceTree = "<group>"; };
+		F8E3254F1B058CAD008039F6 /* phone.frag.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = phone.frag.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,17 +75,17 @@
 		F8DA4E571B03041D00F05E95 /* GLUS */ = {
 			isa = PBXGroup;
 			children = (
-				F8E3254A1B04E107008039F6 /* shader */,
+				F8E3254D1B058C83008039F6 /* shader */,
 				F8DA4E581B03041D00F05E95 /* main.cpp */,
 			);
 			path = GLUS;
 			sourceTree = "<group>";
 		};
-		F8E3254A1B04E107008039F6 /* shader */ = {
+		F8E3254D1B058C83008039F6 /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				F8E3254B1B04F583008039F6 /* basic.vert.glsl */,
-				F8E3254C1B04F5A3008039F6 /* color.frag.glsl */,
+				F8E3254E1B058C9E008039F6 /* phong.vert.glsl */,
+				F8E3254F1B058CAD008039F6 /* phone.frag.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
